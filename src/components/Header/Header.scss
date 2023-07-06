@@ -1,0 +1,45 @@
+.header {
+ 
+
+  padding: 10px 24px;
+
+  // background-color: aqua;
+  nav {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.line {
+  width: 1090px;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.13);
+  position: relative;
+  left: 280px;
+  top: 16px;
+}
+.list {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+padding: 45px 0;
+  .link {
+    padding: 12px 8px;
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.22);
+    background-color: rgba(0, 0, 0, 0.12);
+    text-decoration: none;
+    color: var(--dark-primary, #000);
+    font-size: 14px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .link.active{
+    background-color: #000;
+    color: white;
+  }
+}

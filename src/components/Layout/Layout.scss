@@ -1,0 +1,28 @@
+$header-heigth: 135px;
+$aside-width: 300px;
+
+header {
+  width: 100%;
+  height: $header-heigth;
+  z-index: 1;
+}
+
+aside {
+  position: fixed;
+  top: $header-heigth;
+  height: calc(100vh - $header-heigth);
+  width: $aside-width;
+  // background-color: chartreuse;
+  z-index: 2000;
+}
+main {
+  position: fixed;
+  width: calc(100vw - $aside-width);
+  height: calc(100vh - $header-heigth);
+  left: $aside-width;
+  top: $header-heigth;
+  // background-color: cornflowerblue;
+  overflow: auto;
+  z-index: 100;
+ 
+}
